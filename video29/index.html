@@ -3,9 +3,88 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+  <title>CSS </title>
+  <style>
+    body{
+      display: flex;
+      justify-content: center;
+      font-family: Nunito;
+    }
+    button{
+      font-family: Nunito;
+    }
+    .box{
+      border: 0 solid transparent;
+      border-radius: 5px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+      height: 350px;
+      width: 200px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 5px;
+    }
+    .image{
+      height: 150px;
+      width: 200px;
+      border: 0 solid transparent;
+      border-radius: 5px;
+    }
+    .container{
+      display: flex;
+      flex-direction: column;
+    }
+    .button, .button1{
+      background-color: transparent;
+      color: gray;
+      padding: 3px 4px;
+      border: 1px solid gray;
+      border-radius: 10px;
+      font-size: 11px;
+      cursor: pointer;
+    }
+    .button{
+      margin-left: 2px;
+    }
+    .para1{
+      font-size: 20px;
+      font-weight: bold;
+      margin-left: 2px;
+      margin-top: 8px;
+    }
+    .para2{
+      font-size: 13px;
+      margin-left: 2px;
+      margin-top: -10px;
+    }
+    .load-button{
+      width: 100px;
+      height: 35px;
+      border: 0 solid transparent;
+      border-radius: 17px;
+      margin-left: 50px;
+      background-color: rgba(53, 53, 199,0.2);
+      color: blue;
+    }
+  </style>
 </head>
-<body>
-  
+<body bgcolor="aqua">
+  <div  class="box box1">
+    <div>
+      <img class="image" src="https://d38b044pevnwc9.cloudfront.net/cutout-nuxt/enhancer/2.jpg" alt="">
+    </div>
+    <div class="container">
+      <div>
+        <button class="button">Nature</button>
+        <button class="button1">Lake</button>
+      </div>
+      <p class="para1">Natural Lake</p>
+      <p class="para2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, ex officiis. Illonulla inventore porro ipsam</p>
+      <button class="load-button">Load more</button>
+    </div>
+  </div>
 </body>
 </html>
